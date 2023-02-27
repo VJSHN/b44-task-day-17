@@ -1,0 +1,87 @@
+function one(cb = ()=> {}) {
+    console.log('guy1:hw r u')
+    cb();
+}
+
+function two(cb = ()=> {}){
+    console.log('guy2:fine');
+    cb();
+}
+
+function three(cb = ()=> {}){
+    console.log('guy1:what is your fav colour');
+    cb();
+}
+
+function four(cb = ()=> {}){
+    console.log('guy2:red');
+    cb();
+}
+
+function five(cb = ()=> {}){
+    console.log('guy1:hey! my fav colour also red');
+    cb();
+}
+
+function six(cb = ()=> {}){
+    console.log('guy1:what is you fav food');
+    cb();
+}
+
+function seven(cb = ()=> {}){
+    console.log('guy2:fish');
+    cb();
+}
+
+function eight(cb = ()=> {}){
+    console.log('guy1:but i like only chicken');
+    cb();
+}
+
+function nine(cb = ()=> {}){
+    console.log('guy1: ok!dont worry thats not a problem, shall we start our friendly journey');
+    cb();
+}
+
+function ten(cb = ()=> {}){
+    console.log('guy2:ok dude');
+    cb();
+}
+
+function message(cb = ()=> {}){
+    console.log("Greet:Happy friendship day");
+    cb();
+}
+
+
+function greet() {
+    one(()=> setTimeout(()=>{
+        two(()=> setTimeout(()=>{
+            three(()=> setTimeout(()=> {
+                four(()=> setTimeout(()=>{
+                    five(()=> setTimeout(()=> {
+                        six(()=> setTimeout(()=>{
+                            seven(()=> setTimeout(()=>{
+                                eight(()=> setTimeout(()=>{
+                                    nine(()=> setTimeout(()=>{
+                                        ten(()=> setTimeout(()=>{
+                            				message(()=>{
+                                          
+                                          });
+                                        },));
+                            
+                                    },500));
+                            
+                                },3000));
+                            },2000));
+                        },1000));
+                    },2000));
+                },1000));
+            },2000));
+
+        },1000));
+
+    },2000));
+}
+
+greet();
